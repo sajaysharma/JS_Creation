@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Gilroy";
+            box-sizing: border-box;
+        }
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: gray;
+        }
+        html,
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            color: #555;
+            user-select: none;
+            font-size: 20rem;
+            font-weight: 250;
+        }
+        input{
+            display: none;
+        }
+        #btn{
+            padding: 12px 22px;
+            background-color: rgb(41, 143, 114);
+            color: white;
+            font-weight: 600;
+            border-radius: 16px;
+            font-size: 8rem;
+            user-select: none;
+        }
+        #btn:hover{
+            background-color: rgb(33, 115, 92);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <!-- <h1>P</h1> -->
+        <input id="infile" type="file">
+        <div id="btn">Upload File</div>
+    </div>
+</body>
+<script src="./script.js">
+
+</script>
+</html>

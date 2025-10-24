@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form submit karna seekho</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Gilroy";
+            box-sizing: border-box;
+        }
+
+        #main {
+            padding: 60px;
+            width: 100%;
+            height: 100%;
+            background-color: gray;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        input {
+            display: grid;
+            gap: 20px;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid #565555;
+            margin-top: 5px;
+        }
+
+        .card {
+            max-width: 300px;
+            margin-top: 40px;
+            color: white;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid white;
+            margin-right: 10px;
+        }
+
+        .profile {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 7px;
+        }
+
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card h5 {
+            margin-top: 3px;
+        }
+
+        .card p {
+            font-size: 12px;
+            margin-top: 7px;
+        }
+
+        .outer {
+            width: 17%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 3px solid black;
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="outer">
+            <form id="input">
+                <input type="text" placeholder="Image">
+                <input type="text" placeholder="Name here">
+                <input type="text" placeholder="Profession">
+                <input type="text" placeholder="About Something">
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+
+</html>

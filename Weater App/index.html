@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Detection System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>🌤️ Real-Time Weather Detection</h1>
+      <p>Check current weather and 3-day forecast instantly!</p>
+    </header>
+
+    <section class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <section id="weather-info" class="weather-info">
+      <!-- Current weather data will appear here -->
+      <div class="current-weather">
+        <h2 id="cityName">--</h2>
+        <p id="date">--</p>
+        <div class="temp-info">
+          <img id="weatherIcon" src="" alt="Weather Icon" />
+          <h1 id="temperature">--°C</h1>
+        </div>
+        <p id="condition">--</p>
+        <div class="extra-info">
+          <p>Humidity: <span id="humidity">--%</span></p>
+          <p>Wind: <span id="windSpeed">-- km/h</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="forecast" class="forecast">
+      <h2>3-Day Forecast</h2>
+      <div class="forecast-container" id="forecastContainer">
+        <!-- Future weather data will be injected here -->
+      </div>
+    </section>
+
+    <footer>
+      <p>Developed by Ajay Sharma 🌍 | Powered by OpenWeather API</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
