@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Download Progress</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="container" role="main">
+    <h1 class="title">Download simulator</h1>
+
+    <section class="download-card" aria-label="Download progress">
+      <div class="file-info">
+        <div class="file-icon">⬇️</div>
+        <div class="file-meta">
+          <div class="file-name">example-file.zip</div>
+          <div class="file-size">42.7 MB</div>
+        </div>
+      </div>
+
+      <div class="progress-wrapper" aria-hidden="false">
+        <div class="progress-bar" id="progressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-info">
+          <div id="percentText" class="percent-text">0%</div>
+          <div id="statusText" class="status-text">Idle</div>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="startBtn" class="btn">Start</button>
+        <button id="pauseBtn" class="btn" disabled>Pause</button>
+        <button id="resetBtn" class="btn" disabled>Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Put your JavaScript here or link an external script like <script src="script.js"></script> -->
+</body>
+<script src="./script.js"> </script>
+</html>

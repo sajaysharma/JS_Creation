@@ -1,0 +1,134 @@
+:root{
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #97a0b3;
+  --accent: #3b82f6; /* blue accent */
+  --success: #10b981;
+  --glass: rgba(255,255,255,0.03);
+}
+
+*{box-sizing:border-box}
+html,body{
+  height:100%;
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #081022 0%, #061021 100%);
+  color: #e6eef8;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+  max-width:520px;
+  margin:60px auto;
+  padding:20px;
+}
+
+.title{
+  text-align:center;
+  margin:0 0 18px 0;
+  font-weight:600;
+  letter-spacing:-0.2px;
+}
+
+.download-card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:12px;
+  padding:18px;
+  border:1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+}
+
+.file-info{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:14px;
+}
+
+.file-icon{
+  width:46px;
+  height:46px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--glass);
+  border-radius:10px;
+  font-size:20px;
+}
+
+.file-meta .file-name{
+  font-weight:600;
+  font-size:15px;
+}
+
+.file-meta .file-size{
+  color:var(--muted);
+  font-size:13px;
+}
+
+.progress-wrapper{
+  margin-top:8px;
+  margin-bottom:12px;
+}
+
+.progress-bar{
+  width:100%;
+  height:14px;
+  background: rgba(255,255,255,0.03);
+  border-radius:10px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,0.02);
+}
+
+.progress-fill{
+  height:100%;
+  width:0%;
+  background: linear-gradient(90deg, rgba(59,130,246,0.9), rgba(16,185,129,0.9));
+  box-shadow: 0 6px 16px rgba(59,130,246,0.12) inset;
+}
+
+.progress-info{
+  display:flex;
+  justify-content:space-between;
+  margin-top:8px;
+  align-items:center;
+}
+
+.percent-text{
+  font-weight:600;
+}
+
+.status-text{
+  color:var(--muted);
+  font-size:13px;
+}
+
+.controls{
+  display:flex;
+  gap:8px;
+  margin-top:14px;
+}
+
+.btn{
+  padding:8px 12px;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.02);
+  color:inherit;
+  cursor:pointer;
+  font-weight:600;
+  flex:1;
+}
+
+.btn:disabled{
+  opacity:0.45;
+  cursor:not-allowed;
+}
+
+.hint{
+  display:block;
+  margin-top:12px;
+  color:var(--muted);
+  font-size:13px;
+}
