@@ -75,6 +75,16 @@ function createCardElement(user) {
 // ===== Function to Render All Cards =====
 function renderCards(userArray) {
   cardsContainer.innerHTML = ""; // Clear previous cards
+
+  if (userArray.length === 0) {
+    // If no users found → show message
+    const notFound = document.createElement("div");
+    notFound.classList.add("not-found");
+    notFound.textContent = "😕 Oop's! No users found!";
+    cardsContainer.appendChild(notFound);
+    return;
+  }
+
   const fragment = document.createDocumentFragment(); // Faster DOM updates
 
   userArray.forEach(user => {
