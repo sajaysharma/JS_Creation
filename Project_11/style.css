@@ -1,0 +1,54 @@
+*{
+        margin: 0px;
+        padding: 0px;
+
+}
+html, body{
+        height: 100vh;
+        background-color: black;
+        color: white;
+}
+
+h1{
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+}
+
+#parent{
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+        padding: 10px;
+        gap: 20px;
+        flex-wrap: wrap;
+}
+
+.profile{
+        width: 150px;
+        text-align: center;
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        padding: 5px;
+        transition: transform 1s ease;
+}
+
+.profile:hover{
+        transform: scale(1.2);
+}
+img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+}
+h2{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+a{
+        text-decoration: none;
+        color: orange;
+}

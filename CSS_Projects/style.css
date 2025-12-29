@@ -1,0 +1,142 @@
+*{
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(9, 9, 9);
+}
+body, html{
+    width: 100vh;
+    height: 100vh; 
+}
+h1{
+        background-color: orange;
+}
+
+h2{
+        background-color: yellow;
+        position: relative;
+        margin-top: 10px;
+        /* bottom: 50px; */
+        top: 25px;
+        z-index: 10;
+}
+
+h3{
+        background-color: #fff;
+        margin-top: 20px;
+        position: fixed;
+
+}
+h4{
+        background-color: green;
+        margin-top: 10px;
+        position: sticky;
+        top: 0px;
+}
+h5{
+        background-color: red;
+        margin-top: 10px;
+
+}
+#abc{
+        background-color: aqua;
+        height: 200px;
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+}
+p{
+        background-color: brown;
+        margin-top: 45px;
+        margin-bottom: 65px;
+        position: absolute;
+        left: 50px;
+        top: 0px;
+        margin: 0px;
+}
+#box{
+        height: 200px;
+        width: 300px;
+        background-color: #ffffff;
+        margin: 20px;
+        position: relative;
+}
+#child{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        border-radius: 50%;
+}
+
+#parent{
+        background-color: rgb(255, 255, 5);
+        height: 200px;
+        width: 300px;
+        margin: 20px;
+        position: relative;
+}
+#a{
+   background-color: blue;
+   height: 85px;
+   width: 85px;
+   position: absolute;       
+}
+#b{
+   background-color: blue;
+   height: 85px;
+   width: 85px;       
+   position: absolute;
+   bottom: 0px;
+}
+#c{
+   background-color: blue;
+   height: 85px;
+   width: 185px;      
+   position: absolute;
+   right: 0px; 
+}
+#d{
+   background-color: blue;
+   height: 85px;
+   width: 185px;      
+   position: absolute; 
+   bottom: 0px;
+   right: 0px;
+}
+#laos{
+        background-color: #fff;
+        height: 200px;
+        width: 300px;
+        margin: 20px;
+        position: relative;
+}
+#upper{
+        background-color: #CE1126;
+        width: 300px;
+        height: 50px;
+}
+#middle{
+        background-color: #002868;
+        width: 300px;
+        height: 100px;
+        position: relative;
+}
+#circle{
+        background-color: white;
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        border-radius: 50%;
+        left: 112px;
+        top: 10px;
+}
+#bottom{
+        background-color: red;
+        width: 300px;
+        height: 50px;
+        position: absolute;
+        bottom: 0px;
+}
